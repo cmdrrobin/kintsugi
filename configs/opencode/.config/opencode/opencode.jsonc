@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "system",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5", // title gen, lightweight tasks
+  "autoupdate": false,
+  "share": "disabled",
+  "permission": {
+    "bash": {
+      "sudo *": "deny",
+      "rm -rf /": "deny",
+      "rm -rf /*": "deny",
+      "rm -rf ~": "deny",
+      "rm -rf ~/*": "deny",
+      ":(){:|:&};:": "deny" // fork bomb, just in case
+    }
+  },
+  "mcp": {
+    // Snyk security scanning - deps, code, IaC, containers
+    "snyk": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "snyk@latest",
+        "mcp",
+        "-t",
+        "stdio"
+      ]
+    },
+    "home-assistant": {
+      "type": "remote",
+      "url": "{env:HA_URL}",
+      "headers": {
+        "Authorization": "Bearer {env:HA_TOKEN}"
+      },
+      "enabled": false
+    }
+  }
+}

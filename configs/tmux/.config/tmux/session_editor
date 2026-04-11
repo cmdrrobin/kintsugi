@@ -1,0 +1,4 @@
+new -n editor "nvim"
+splitw -v -p 15
+selectw -t 1
+selectp -t 1
