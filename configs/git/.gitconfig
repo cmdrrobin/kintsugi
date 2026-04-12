@@ -1,0 +1,64 @@
+[user]
+  name = Robin Gruyters
+  initials = rg
+  email = 2082795+rgruyters@users.noreply.github.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDwvos7+grPbpsi2YpmAUtHIVdluFOQsCoCh75MqXpzo
+
+[grep]
+  line-number = true
+
+[gpg]
+  program = gpg
+  format = ssh
+
+[gpg "ssh"]
+  program = "/opt/1Password/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+  verbose = true
+
+[pull]
+  rebase = true
+
+[push]
+  autoSetupRemote = true
+
+[fetch]
+  prune = true
+  pruneTags = true
+
+[diff]
+  algorithm = histogram    # Clearer diffs on moved/edited lines
+  colorMoved = plain       # Highlight moved blocks in diffs
+  mnemonicPrefix = true    # More intuitive refs in diff output
+
+[init]
+  defaultBranch = main
+
+[column]
+  ui = auto                # Output in columns when possible
+
+[branch]
+  sort = -committerdate    # Sort branches by most recent commit first
+
+[tag]
+  sort = -version:refname  # Sort version numbers as you would expect
+
+[rerere]
+  enabled = true           # Record and reuse conflict resolutions
+  autoupdate = true        # Apply stored conflict resolutions automatically
+
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  undo = reset HEAD~
+  cm = commit -m
+
+[include]
+  path = ~/.gitconfig_local
+
+[includeIf "gitdir:~/code/work/"]
+  path = ~/.gitconfig-work

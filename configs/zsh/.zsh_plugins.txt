@@ -1,0 +1,4 @@
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions kind:defer
+Aloxaf/fzf-tab

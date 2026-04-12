@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [ $(uname) == "Linux" ]; then
+    echo "Downloading and installing sesh..."
+    GO=$(which go)
+    [[ $? -eq 1 ]] && GO="/usr/local/go/bin/go"
+
+    $GO install github.com/joshmedeski/sesh/v2@latest
+fi
+
+# vi: ft=bash

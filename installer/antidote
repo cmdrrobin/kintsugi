@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $(uname) == "Linux" ]; then
+    echo "Install antidote..."
+    git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~/.config/zsh}/antidote
+fi
+
+# vi: ft=bash
