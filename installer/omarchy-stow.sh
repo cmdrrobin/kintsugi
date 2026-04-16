@@ -11,5 +11,6 @@ STOW_CONFIGS="ghostty git hypr hyprdynamicmonitors jj mako opencode sesh starshi
 yay -Sy stow || exit 1
 
 for folder in $STOW_CONFIGS; do
-    stow -v -d "$CONFIGS" -t ~ $folder
+    mkdir -p "$HOME/.config/$folder"
+    stow -v -d "$CONFIGS" -t ~ "$folder"
 done
