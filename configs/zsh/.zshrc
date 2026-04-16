@@ -81,18 +81,21 @@ export CLICOLOR=1;
 
 # History
 setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+
 HISTSIZE="10000"
 SAVEHIST="10000"
 
 HISTFILE="$HOME/.zsh_history"
 
-export SSH_AUTH_SOCK=~/.1password/agent.sock
+# SSH Agent with 1Password
+export SSH_AUTH_SOCK="~/.1password/agent.sock"
 
-# opencode
-export PATH=/home/robin/.opencode/bin:$PATH
+# Opencode
+export PATH="/home/robin/.opencode/bin:$PATH"
 
 # Rust (cargo)
-export PATH=$HOME/.cargo/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # NOTE: When local zshrc file exists, source it!
 # This is used when some settings shouldn't be managed by git (or my dotfiles)
