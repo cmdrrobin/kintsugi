@@ -89,7 +89,7 @@ SAVEHIST="10000"
 HISTFILE="$HOME/.zsh_history"
 
 # SSH Agent with 1Password
-export SSH_AUTH_SOCK="~/.1password/agent.sock"
+export SSH_AUTH_SOCK=~/.1password/agent.sock
 
 # Opencode
 export PATH="/home/robin/.opencode/bin:$PATH"
