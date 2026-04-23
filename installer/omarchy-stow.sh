@@ -6,7 +6,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SCRIPT_ROOT_DIR="$(basename $SCRIPT_DIR)"
 CONFIGS="${SCRIPT_ROOT_DIR}/configs"
 
-STOW_CONFIGS="ghostty git hypr hyprdynamicmonitors jj mako opencode sesh starship systemd tmux waybar zsh"
+STOW_CONFIGS="bat ghostty git hypr hyprdynamicmonitors jj mako opencode sesh starship systemd tmux waybar zsh"
 
 yay -Sy stow || exit 1
 
