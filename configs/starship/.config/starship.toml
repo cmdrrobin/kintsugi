@@ -18,10 +18,12 @@ repo_root_style = "bold cyan"
 repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
+disabled = true
 format = "[$branch]($style) "
 style = "italic cyan"
 
 [git_status]
+disabled = true
 format     = '[$all_status]($style)'
 style      = "cyan"
 ahead      = "⇡${count} "
@@ -58,9 +60,6 @@ disabled = true
 symbol = "󱁢 "
 
 [custom.jj]
-command = "prompt"
-format = "$output"
-ignore_timeout = true
-shell = ["starship-jj", "--ignore-working-copy", "starship"]
-use_stdin = false
-when = true
+when = "jj-starship detect"
+shell = ["jj-starship"]
+format = "$output "
