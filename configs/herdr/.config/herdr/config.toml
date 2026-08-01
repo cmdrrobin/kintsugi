@@ -1,0 +1,28 @@
+[theme]
+name = "rose-pine"
+dark_name = "rose-pine"
+light_name = "rose-pine-dawn"
+auto_switch = true
+
+[ui.toast]
+delivery = "system"
+
+[keys]
+prefix = "ctrl+a"
+
+# tmux: christoomey/vim-tmux-navigator — move between panes with ctrl+h/j/k/l,
+# no prefix needed. (tmux also had prefix h/j/k/l via bind-key select-pane.)
+focus_pane_left = "ctrl+h"
+focus_pane_down = "ctrl+j"
+focus_pane_up = "ctrl+k"
+focus_pane_right = "ctrl+l"
+
+# tmux: bind % split-window -h  (side-by-side panes, vertical divider)
+split_vertical = "prefix+%"
+# tmux: bind '"' split-window -v  (stacked panes, horizontal divider)
+split_horizontal = 'prefix+"'
+# tmux: bind c new-window
+new_tab = "prefix+c"
+
+[ui]
+pane_borders = false
