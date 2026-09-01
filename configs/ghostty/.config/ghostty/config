@@ -4,7 +4,8 @@
 theme = Rose Pine
 
 # Font
-font-family = "Monaspace Neon NF"
+font-family = "Monaspace Neon Var"
+font-family = "Symbols Nerd Font Mono"
 font-style = Regular
 font-size = 9
 
