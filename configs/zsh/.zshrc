@@ -100,5 +100,3 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # NOTE: When local zshrc file exists, source it!
 # This is used when some settings shouldn't be managed by git (or my dotfiles)
 [[ -e $HOME/.zshrc_local ]] && source $HOME/.zshrc_local
-
-. "$HOME/.local/share/../bin/env"
