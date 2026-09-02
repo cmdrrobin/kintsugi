@@ -1,6 +1,0 @@
-include=~/.config/omarchy/current/theme/mako.ini
-
-ignore-timeout=1
-
-[urgency=critical]
-default-timeout=10000
