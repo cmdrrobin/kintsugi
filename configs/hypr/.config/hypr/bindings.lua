@@ -23,3 +23,10 @@ o.bind("SUPER + CTRL + RETURN", "Herdr", "ghostty -e herdr")
 -- Set Tick Tick
 -- hl.unbind("SUPER + SHIFT + T")
 -- o.bind("SUPER + SHIFT + T", "Tick Tick", { omarchy = "TickTick" })
+
+-- flea --default: begin. Written by `flea --default`; `flea --default off` removes the block whole.
+hl.unbind("SUPER + SHIFT + F")
+o.bind("SUPER + SHIFT + F", "File manager", { launch = 'flea --gui' })
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
+-- flea --default: end.
