@@ -26,10 +26,6 @@ retrunk = ["rebase", "-d", "trunk()"]
 "format_timestamp(timestamp)" = "timestamp.ago()"
 
 [ui]
+pager = ["hunk", "pager"]
+diff-formatter = ":git"
 default-command = "log"
-diff.format = "git"
-
-[colors]
-"diff token" = { underline = false }
-"diff remove token" = { bg = "#ebbcba" }
-"diff added token" = { bg = "#9ccfd8" }
