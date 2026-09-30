@@ -27,3 +27,8 @@ hl.window_rule({
 	},
 	workspace = 1,
 })
+
+-- NOTE: make Omarchy shell download plugin smaller and floating
+o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { tag = "-floating-window" })
+o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { float = true })
+o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { move = { "(monitor_w-window_w-2)", 34 } })

@@ -30,6 +30,13 @@ hl.monitor({
 	scale = 1,
 })
 
+hl.monitor({
+	output = "desc:Philips Consumer Electronics Company PHL 272B7QU",
+	mode = "preferred",
+	position = "auto",
+	scale = 1,
+})
+
 -- Configure a specific monitor.
 -- hl.monitor({ output = "DP-2", mode = "2560x1440@144", position = "0x0", scale = 1 })
 
