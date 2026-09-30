@@ -24,7 +24,8 @@
         "mcp",
         "-t",
         "stdio"
-      ]
+      ],
+      "enabled": false
     },
     "home-assistant": {
       "type": "remote",
