@@ -29,3 +29,11 @@ retrunk = ["rebase", "-d", "trunk()"]
 pager = ["hunk", "pager"]
 diff-formatter = ":git"
 default-command = "log"
+
+[merge-tools.diffconflicts]
+program = "nvim"
+merge-args = [
+    "-c", "let g:jj_diffconflicts_marker_length=$marker_length",
+    "-c", "JJDiffConflicts", "$output",
+]
+merge-tool-edits-conflict-markers = true
