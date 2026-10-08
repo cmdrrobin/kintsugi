@@ -1,0 +1,9 @@
+{
+  "theme": "system",
+  "lastChangelogVersion": "1.0.4",
+  "defaultProvider": "opencode",
+  "defaultModel": "gpt-6.1-sol",
+  "defaultTools": [
+    "+codemode"
+  ]
+}
