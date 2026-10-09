@@ -6,9 +6,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SCRIPT_ROOT_DIR="$(basename $SCRIPT_DIR)"
 CONFIGS="${SCRIPT_ROOT_DIR}/configs"
 
-STOW_CONFIGS="bat ghostty git hypr hyprdynamicmonitors jj mako opencode sesh starship systemd tmux waybar zsh"
+STOW_CONFIGS="bat ghostty git herdr hunk hypr jj opencode pi pipewire sesh starship tmux zsh"
 
-yay -Sy stow || exit 1
+if test ! -e stow; then
+    omarchy pkg add stow
+fi
 
 for folder in $STOW_CONFIGS; do
     mkdir -p "$HOME/.config/$folder"
