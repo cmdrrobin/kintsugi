@@ -1,1 +1,0 @@
-/home/robin/.local/state/tmux/plugins/tmux-agent-status/adapters/opencode/tmux-agent-status.js

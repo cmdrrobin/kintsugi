@@ -32,3 +32,8 @@ hl.window_rule({
 o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { tag = "-floating-window" })
 o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { float = true })
 o.window({ class = "^org.quickshell$", title = "^Downloads$" }, { move = { "(monitor_w-window_w-2)", 34 } })
+
+-- Opt another application in to Omarchy's standard transparency.
+-- Find its class with: hyprctl clients
+-- o.transparent_window("my-app")
+-- o.transparent_window("my-app", "0.9 0.85") -- Custom active/inactive opacity.
