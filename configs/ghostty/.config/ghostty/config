@@ -1,7 +1,7 @@
 # Dynamic theme colors
 # config-file = ?"~/.local/state/omarchy/current/theme/ghostty.conf"
 
-theme = Rose Pine
+theme = dark:Rose Pine,light:Rose Pine Dawn
 
 # Font
 font-family = "Monaspace Neon Var"
